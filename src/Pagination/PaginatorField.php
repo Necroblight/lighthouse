@@ -37,4 +37,9 @@ class PaginatorField
     {
         return $root->values(); // @phpstan-ignore-line static refers to the wrong class because it is a proxied method call
     }
+
+    public function summaryResolver(LengthAwarePaginator $root, $kaka = null, $kaka2 = null, $kaka3 = null, $kaka4 = null): Collection
+    {
+        dd($kaka3->getFieldSelection());
+    }
 }

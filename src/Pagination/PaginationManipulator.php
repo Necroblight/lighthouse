@@ -168,6 +168,9 @@ GRAPHQL
             "A paginated list of $fieldTypeName items."
             type $paginatorTypeName {
                 "Pagination information about the list of items."
+                summary: Summary! @field(resolver: "{$paginatorFieldClassName}@summaryResolver")
+
+                "Pagination information about the list of items."
                 paginatorInfo: PaginatorInfo! @field(resolver: "{$paginatorFieldClassName}@paginatorInfoResolver")
 
                 "A list of $fieldTypeName items."

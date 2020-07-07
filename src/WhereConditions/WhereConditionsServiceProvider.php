@@ -101,7 +101,7 @@ class WhereConditionsServiceProvider extends ServiceProvider
                 "A set of conditions that requires at least one condition to match."
                 OR: [$name!]
 
-                "A nested ord direct relation condition that create an amount criteria, and optionaly nested condition criteria."
+                "Check whether a relation exists, or if it matches a count criteria. And with option for a where clause."
                 HAS: $hasRelationInputName
             }
 GRAPHQL
